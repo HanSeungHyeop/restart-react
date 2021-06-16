@@ -3,9 +3,8 @@ import React from 'react';
 function Hello({ color, name, isSpecial }) {
     return (
         <div style={{ color }}>
-            {/* isSpecial이 true이면 '*'을 출력, 아니면 null을 보여줌 */}
-            {/* null, false, undefined를 렌더링하면 아무것도 나타나지않음 */}
-            {isSpecial ? <b>*</b> : null}
+            {/* isSpecial이 true면 '*'을 출력, false일땐 false가 됨 */}
+            {isSpecial && <b>*</b>}
             안녕하세요 {name}
         </div>
     );
