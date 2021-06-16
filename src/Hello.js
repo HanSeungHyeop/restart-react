@@ -1,7 +1,7 @@
-import React from 'react'; //리액트 컴포넌트를 만들때 입력
+import React from 'react';
 
-function Hello() {
-    return <div>안녕하세요</div>
+function Hello(props) { //컴포넌트에 전달되는 props는 파라미터를 통해 조회가능. props는 객체형태로 전달됨.
+    return <div>안녕하세요 {props.name}</div>
 }
 
-export default Hello; // Hello라는 컴포넌트를 내보낸다는 의미. 다른 컴포넌트에서도 사용가능
+export default Hello;
