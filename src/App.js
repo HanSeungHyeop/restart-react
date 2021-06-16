@@ -3,11 +3,12 @@ import './App.css';
 import Hello from './Hello';
 
 function App() {
+  const name = 'react';
   return (
     <>
-      {/* div태그로 감싸기 애매할때 Fragment라는걸 사용 */}
       <Hello />
-      <div>안녕히계세요</div>
+      <div>{name}</div>
+      {/* 자바스크립트의 변수를 보여줄 때 {}로 감싸서 보여줌 */}
     </>
   );
 }
