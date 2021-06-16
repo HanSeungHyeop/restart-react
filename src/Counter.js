@@ -7,13 +7,11 @@ function Counter() {
 
     const onIncrease = () => { //onIncrease함수 생성
         console.log('+1');
-        // onIncrease함수가 실행될 경우 setNumber의 값은 'number + 1'이 됨
-        setNumber(number + 1);
+        setNumber(prevNumber => prevNumber + 1);
     }
     const onDecrease = () => { //onDecrease함수 생성
         console.log('-1');
-        // onDecrease함수가 실행될 경우 setNumber의 값은 'number - 1'이 됨
-        setNumber(number - 1);
+        setNumber(prevNumber => prevNumber - 1);
     }
     return (
         <div>
